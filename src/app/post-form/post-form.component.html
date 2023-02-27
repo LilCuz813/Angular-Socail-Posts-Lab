@@ -1,0 +1,10 @@
+<h3>Add a New Post</h3>
+<div>
+    <p>Title:</p>
+    <input type="text" [(ngModel)]="newPost.title"/>
+
+    <p>Thought:</p>
+    <input type="text" [(ngModel)]="newPost.thought"/>
+
+    <button (click)="SubmitPost()">Add Post</button>
+</div>

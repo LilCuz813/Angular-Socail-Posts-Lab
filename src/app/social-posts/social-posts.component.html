@@ -1,0 +1,5 @@
+<app-single-posts *ngFor="let p of Posts"[DisplayPost]="p"></app-single-posts>
+
+<button (click)="display = true">Show Post</button>
+
+<app-post-form *ngIf="display"(Submitted)="AddPost($event)"></app-post-form>
